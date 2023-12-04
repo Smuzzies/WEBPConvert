@@ -3,7 +3,7 @@
 
 Minimalist Electron application for converting images to WEBP quickly.
 
-Windows 11 Download: https://smuzzies.com/WEBPConvert_Setup_1.0.0.exe
+[Windows 11 Download](https://smuzzies.com/WEBPConvert_Setup_1.0.0.exe)
 
 ![image](https://github.com/Smuzzies/WEBPConvert/assets/110495122/00bbc5aa-8249-4808-b2c4-d53356d4f57f)
 
