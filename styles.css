@@ -1,0 +1,182 @@
+/* Reset some default styles for body and container */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Open Sans', sans-serif;
+  background-color: #121212;
+  color: #ffffff;
+}
+
+.container {
+  max-width: 500px;
+  margin: 0 auto;
+  padding: 20px;
+  text-align: center;
+}
+
+/* Title styles */
+.app-title {
+  font-size: 24px;
+  margin-bottom: 10px;
+  color: #3498db; /* Primary color */
+}
+
+/* Dark mode button styles */
+.dark-mode-button {
+  background-color: #222; /* Dark button background color */
+  color: #ffffff; /* Light button text color */
+  padding: 10px 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.dark-mode-button:hover {
+  background-color: #333; /* Dark button background color on hover */
+  transform: scale(1.05);
+}
+
+/* Dark mode text styles */
+.dark-mode-text {
+  color: #80c931; /* Light text color */
+  margin-top: 10px;
+}
+
+/* Custom File Input Button */
+.file-input-button {
+  background-color: #3498db; /* Match primary color */
+  color: #ffffff; /* Light text color */
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-bottom: 10px; /* Spacing between button and text */
+}
+
+.file-input-button:hover {
+  background-color: #2980b9; /* Slightly darker on hover */
+}
+
+/* Hide the default file input, but keep it functional */
+input[type="file"] {
+  width: 0.1px;
+  height: 0.1px;
+  opacity: 0;
+  overflow: hidden;
+  position: absolute;
+  z-index: -1;
+}
+
+/* Label for the file input (styled as a button) */
+.file-input-label {
+  font-size: 16px;
+  cursor: pointer;
+  display: inline-block;
+  padding: 10px 10px;
+  background-color: #222;
+  color: white;
+  border-radius: 5px;
+  margin-top: 10px;
+}
+
+.file-input-label:hover {
+  background-color: #333;
+}
+
+/* Title Bar Styles */
+.title-bar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #222;
+  color: #fff;
+  padding: 5px 10px;
+  -webkit-app-region: drag; /* Necessary for dragging */
+}
+
+.title-bar-btns {
+  display: flex;
+  -webkit-app-region: no-drag; /* Disable dragging on buttons */
+}
+
+.title-bar-btn {
+  background: none;
+  border: none;
+  color: #fff;
+  cursor: pointer;
+  font-size: 16px;
+  margin-left: 10px;
+}
+
+.title {
+  font-size: 16px;
+}
+
+/* Exit App Button Styles */
+#exitButton {
+  background-color: #eabb20; /* Red color for exit */
+  margin-top: 10px; /* Reduced space above the button */
+  color: #020202;
+}
+
+#exitButton:hover {
+  background-color: #e7cd3c; /* Slightly lighter red on hover */
+}
+
+/* Thumbnail Container Styles */
+.thumbnail-container {
+  display: flex; /* Use flexbox */
+  flex-direction: column; /* Stack items vertically */
+  align-items: center; /* Center items horizontally */
+  justify-content: center; /* Center items vertically */
+  margin-top: 10px;
+  border: 1px dashed #dbac34; /* Dashed border for the drop zone */
+  padding: 10px;
+  cursor: pointer; /* Cursor changes to pointer to indicate it's clickable */
+  text-align: center; /* Center the text */
+  background-color: #1e272e; /* Background color */
+  height: 150px; /* Fixed height */
+  width: 95%; /* Full width */
+  overflow: hidden; /* Hide overflow */
+}
+
+.thumbnail {
+  height: 100px; /* Fixed height */
+  width: auto; /* Width adjusts automatically to maintain aspect ratio */
+  max-width: 100%; /* Ensure the width doesn't exceed the container's width */
+  border-radius: 10px;
+  padding-top: 15px;
+  display: none; /* Hide by default */
+}
+
+/* Adjust button container styles */
+.button-container {
+  margin-top: 5px; /* Space above the buttons */
+  padding: 5px;
+}
+
+.thumbnail-container p {
+  margin-top: 3px; /* Space between image and text */
+  color: #fff; /* Text color */
+}
+
+/* Status Text Styles */
+#status {
+  word-wrap: break-word; /* Allow long words to be able to break and wrap onto the next line */
+  max-width: 100%; /* Limit the width to prevent overflow */
+  color: #fff; /* Text color */
+  text-align: center; /* Center the text */
+  padding: 5px; /* Padding for better readability */
+}
+
+/* Make the logo draggable */
+.draggable-logo {
+  -webkit-app-region: drag; /* Makes this area draggable */
+  cursor: move; /* Optional: change cursor to indicate draggability */
+}
+
+/* Ensure other elements are not draggable */
+button, input, .thumbnail-container, .button-container {
+  -webkit-app-region: no-drag;
+}

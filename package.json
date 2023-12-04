@@ -1,0 +1,34 @@
+{
+  "name": "WEBPConvert",
+  "version": "1.0.0",
+  "description": "Convert images to WEBP format.",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron .",
+    "dist": "electron-builder"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "GPL-3.0",
+  "dependencies": {
+    "sharp": "^0.33.0"
+  },
+  "build": {
+    "appId": "com.smuz.webpconv",
+    "mac": {
+      "category": "webpconv.app.category.image",
+      "icon": "webpconv.icns"
+    },
+    "win": {
+      "target": "nsis",
+      "icon": "webpconv.ico"
+    },
+    "linux": {
+      "target": ["AppImage", "deb"],
+      "icon": "webpconv.png"
+    }
+  },
+  "devDependencies": {
+    "electron": "^27.1.3"
+  }
+}

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>WebP Convert</title>
+  <link rel="stylesheet" type="text/css" href="styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+  <style>
+    /* Add CSS to prevent scroll bars */
+    html, body {
+      overflow: hidden;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <img src="logo.png" height="50px" class="draggable-logo">
+    <div id="thumbnailContainer" class="thumbnail-container" onclick="document.getElementById('imageInput').click();">
+      <img id="thumbnail" src="" alt="Image Preview" class="thumbnail"/><br>
+      <p>Drag and drop an image here.</p>
+    </div>
+    <div class="button-container">
+      <label for="imageInput" class="file-input-label"><i class="fa fa-upload"></i> Choose an Image</label>
+      <input type="file" id="imageInput" accept=".jpg, .jpeg, .png" style="display: none;">    
+      <button id="convertButton" class="dark-mode-button"><i class="fa fa-file-image"></i> Convert to WebP</button>
+      <button id="exitButton" class="dark-mode-button"><i class="fa fa-times"></i> Exit App</button>
+    </div>
+    <p id="status" class="dark-mode-text"></p>
+  </div>
+  <script src="renderer.js"></script>
+</body>
+</html>
