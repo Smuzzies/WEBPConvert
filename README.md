@@ -1,4 +1,6 @@
 # WEBPConvert
+![webpconvert-high-resolution-logo-transparent](https://github.com/Smuzzies/WEBPConvert/assets/110495122/90fb2806-d099-4ca4-9674-cd8b08d5f1b2)
+
 Minimalist Electron application for converting images to WEBP quickly.
 
 ![image](https://github.com/Smuzzies/WEBPConvert/assets/110495122/00bbc5aa-8249-4808-b2c4-d53356d4f57f)
